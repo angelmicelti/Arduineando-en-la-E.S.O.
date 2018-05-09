@@ -3,9 +3,9 @@ Repositorio "cajón de sastre" para el trabajo de Arduino en la E.S.O.
 
 ![](https://i.blogs.es/71bd8f/650_1200/450_1000.jpg)
 
-[Directamente en código Arduino](Con Código/readme.md)
+- [Directamente en código Arduino](ConCódigo/readme.md)
+- [Programación gráfica](Gráfico/readme.md)
 
-[Programación gráfica](Gráfico/readme.md)
 
 # Recursos que vienen bien
 
