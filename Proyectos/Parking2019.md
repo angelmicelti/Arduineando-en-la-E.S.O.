@@ -1,9 +1,10 @@
 # Maqueta de Parking
 
-Para la ExpoVilladiego de 2019, a los alumnos Diego Castilla, Alejandro Muñoz y Javier Muñoz se les ocurrió la posibilidad de implementar la maqueta de un parking en la que introdujeran algunos **sensores** y **actuadores**.
+Para la ExpoVilladiego de 2019, a los alumnos _**Diego Castilla, Alejandro Muñoz y Javier Muñoz**_ se les ocurrió la posibilidad de implementar la maqueta de un parking en la que introdujeran algunos **sensores** y **actuadores**.
 
 Pensando, pensando, llegamos a la siguiente maqueta:
-![Foto]()
+![Foto](Parking01.png)
+
 
 ## Funcionamiento:
 
@@ -12,6 +13,9 @@ El vehículo ingresa al parking e interrumpe la barrera fotoeléctrica, pero la 
 En ese momento el se puede dirigir a la plaza que se encuentre libre. Se sabrá porque el led correspondiente lucirá de color verde.
 Cuando el vehículo llega a la plaza, provoca la activación del sensor infrarrojo. Ello provocará el cambio de color del led a rojo, hasta que se libere la plaza.
 
+Podemos ver todo esto en el siguiente vídeo:
+
+[![Pulsa para ir al vídeo](http://img.youtube.com/vi/jRAFXkPpz1k/0.jpg)](http://www.youtube.com/watch?v=jRAFXkPpz1k "Parking 2019")
 
 ## Materiales necesarios
 
@@ -77,6 +81,9 @@ Entonces pensamos que sería mucho más seguro encender o apagar el láser con u
 7. Conectamos a la pila cada uno de los cable, respetando la polaridad indicada.
 8. Fijamos con cinta aislante el pulsador del puntero en la posición de encendido y... voilá, el puntero ya se puede controlar con un interruptor.
 
+![Barrera láser con puntero y LDR](Laser.png)
+![Circuito de control del láser](LaserControl.png)
+
 ## Código en ArduinoBlocks
 
 ![Código en ArduinoBlocks](Parking2019AB.png)
@@ -84,3 +91,4 @@ Entonces pensamos que sería mucho más seguro encender o apagar el láser con u
 
 ## Mejoras futuras.
 - Control de las plazas libres. Si todo está ocupado, la barrera no abre.
+- Activación y desactivación del láser mediante programación: cuando la barrera esté alta o cuando cambie el estado de un sensor de IR (cambia el estado de la plaza de aparacamiento)
