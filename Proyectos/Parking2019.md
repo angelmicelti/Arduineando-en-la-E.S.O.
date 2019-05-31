@@ -90,18 +90,21 @@ Entonces pensamos que sería mucho más seguro encender o apagar el láser con u
 
 ## Código Arduino
 
-    #include <Servo.h>
+~~~
+#include <Servo.h>
     boolean b_Barrera;
     Servo servo_5;
     int fnc_dynamic_analogRead(int _pin){
 	  pinMode(_pin,INPUT);
 	  return analogRead(_pin);
     }
-    void fnc_dynamic_digitalWrite(int _pin, int _e){
+
+void fnc_dynamic_digitalWrite(int _pin, int _e){
 	  pinMode(_pin,OUTPUT);
-	 digitalWrite(_pin,_e);
+  	digitalWrite(_pin,_e);
     }
-    void setup()
+
+void setup()
     {
     Serial.begin(9600);
     servo_5.attach(5);
@@ -112,7 +115,8 @@ Entonces pensamos que sería mucho más seguro encender o apagar el láser con u
     delay(0);
     b_Barrera = false;
     }
-    void loop()
+
+void loop()
     {
     if ((digitalRead(2) && (!b_Barrera))) {
       delay(1000);
@@ -127,14 +131,15 @@ Entonces pensamos que sería mucho más seguro encender o apagar el láser con u
       delay(100);
       b_Barrera = false;
     }
+
     if (digitalRead(3)) {
       fnc_dynamic_digitalWrite(6, HIGH);
       fnc_dynamic_digitalWrite(7, LOW);
-
     } else {
       fnc_dynamic_digitalWrite(6, LOW);
       fnc_dynamic_digitalWrite(7, HIGH);
     }
+
     if (digitalRead(4)) {
       fnc_dynamic_digitalWrite(8, HIGH);
       fnc_dynamic_digitalWrite(9, LOW);
@@ -142,6 +147,7 @@ Entonces pensamos que sería mucho más seguro encender o apagar el láser con u
       fnc_dynamic_digitalWrite(8, LOW);
       fnc_dynamic_digitalWrite(9, HIGH);
     }
+
     if (((fnc_dynamic_analogRead(0) < 600) && (!b_Barrera))) {
       delay(1000);
       servo_5.write(90);
@@ -154,7 +160,7 @@ Entonces pensamos que sería mucho más seguro encender o apagar el láser con u
     }
     delay(100);
     }
-
+~~~
 
 [Descarga el código directamente](Parking2019.ino)
 
