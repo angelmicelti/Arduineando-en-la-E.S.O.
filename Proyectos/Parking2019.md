@@ -24,19 +24,19 @@ Podemos ver todo esto en el siguiente vídeo:
 ---
 - **Pulsador táctil capacitivo**: lo colocamos a la entrada del parking, para provocar la apertura de la barrera.
 
-![Sensor táctil capacitivo](PulsadorTactil.jpg)
+![Sensor táctil capacitivo](PulsadorTactil.png)
 
 ---
 
 - **Sensores infrarrojos (IR) TCRT5000**: colocamos un sensor en el suelo de cada una de las plazas del parking, para detectar (por reflexión) la presencia o no de un vehículo en la plaza.
 
-![Sensor de IR TCRT5000](TCRT5000.jpg)
+![Sensor de IR TCRT5000](TCRT5000.png)
 
 ---
 
 - **Fotorresistencia LDR**: la colocaremos en serie con una resistencia 10K
 
-![Resistencia LDR](LDR.jpg)
+![Resistencia LDR](LDR.png)
 
 ---
 
@@ -44,13 +44,13 @@ Podemos ver todo esto en el siguiente vídeo:
 
 - **Servomotor tipo SG90**: moverá la barrera.
 
-![Microservo SG90](SG90.jpg)
+![Microservo SG90](SG90.png)
 
 ---
 
 - **Ledes RG**: nos indicarán la presencia de un coche en la plaza, iluminándose de color rojo, o la ausencia del mismo (iluminándose) en color verde. Hemos escogido éstos porque estaban disponibles en el aula y, aunque teníamos también ledes RGB, no teníamos necesidad de usar el canal B.
 
-![LED RG](LEDRG.jpg)
+![LED RG](LEDRG.png)
 
 ---
 
