@@ -170,4 +170,4 @@ void loop()
 ## Mejoras futuras (TO-DO).
 - Control de las plazas libres. Si todo está ocupado, la barrera no abre.
 - Activación y desactivación del láser mediante programación: cuando la barrera esté alta o cuando cambie el estado de un sensor de IR (cambia el estado de la plaza de aparcamiento)
-- El programa queda bloqueado en la apertura de la barrera: si un coche que está aparcado se pone en marcha, su correspondiente led no cambiará de estado.
+- El programa queda bloqueado en la apertura de la barrera: si un coche que está aparcado se pone en marcha, su correspondiente led no cambiará de estado hasta que la barrera baje.
