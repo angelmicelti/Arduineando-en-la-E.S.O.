@@ -84,6 +84,9 @@ Entonces pensamos que sería mucho más seguro encender o apagar el láser con u
 ![Barrera láser con puntero y LDR](Laser.png)
 ![Circuito de control del láser](LaserControl.png)
 
+## Cableado del montaje
+![Cableado del montaje](Parking2019_bb.png)
+
 ## Código en ArduinoBlocks
 
 ![Código en ArduinoBlocks](Parking2019AB.png)
@@ -164,6 +167,7 @@ void loop()
 
 [Descarga el código directamente](Parking2019.ino)
 
-## Mejoras futuras.
+## Mejoras futuras (TO-DO).
 - Control de las plazas libres. Si todo está ocupado, la barrera no abre.
-- Activación y desactivación del láser mediante programación: cuando la barrera esté alta o cuando cambie el estado de un sensor de IR (cambia el estado de la plaza de aparacamiento)
+- Activación y desactivación del láser mediante programación: cuando la barrera esté alta o cuando cambie el estado de un sensor de IR (cambia el estado de la plaza de aparcamiento)
+- El programa queda bloqueado en la apertura de la barrera: si un coche que está aparcado se pone en marcha, su correspondiente led no cambiará de estado.
