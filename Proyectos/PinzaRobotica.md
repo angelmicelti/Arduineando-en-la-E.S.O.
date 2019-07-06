@@ -17,3 +17,8 @@ y en pocos días teníamos el código disponible y la pinza funcionando.
 
 
 ## Código ArduinoBlocks
+
+![Código en Arduinoblocks para la pinza robótica](Pinza2019AB.png)
+
+
+Podemos ver el código en el [siguiente enlace](http://www.arduinoblocks.com/web/project/154075).
