@@ -7,7 +7,7 @@ Repositorio "cajón de sastre" para el trabajo de Arduino en la E.S.O.
 - [Directamente en código Arduino](ConCodigo/readme.md)
 - [Programación gráfica](Grafico/readme.md)
 - [Proyectos](Proyectos/proyectos.md)
-- [Enreando con Arduino](Enreando\readme.md).
+- [Enreando con Arduino](Enreando/readme.md).
 
 ## Recursos que vienen bien
 
