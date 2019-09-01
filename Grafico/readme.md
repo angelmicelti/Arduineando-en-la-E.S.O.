@@ -4,7 +4,7 @@
 
 ### [ArduinoBlocks](https://www.arduinoblocks.com)
 
-[Más información sobre Arduinoblocks](arduinoblocks.md) 
+[Más información sobre Arduinoblocks](arduinoblocks.md)
 
 ![Arduinoblocks](https://i.ytimg.com/vi/f-2iSs0IkNY/hqdefault.jpg)
 
