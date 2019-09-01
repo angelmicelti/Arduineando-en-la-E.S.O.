@@ -8,11 +8,15 @@
 
 ![Arduinoblocks](https://i.ytimg.com/vi/f-2iSs0IkNY/hqdefault.jpg)
 
+---
+
 ### [Bitbloq](https://bitbloq.bq.com/#/login)
 
 [Más información sobre BitBloq](bitbloq.md)
 
 ![Bitbloq](http://diwo.bq.com/wp-content/uploads/2016/02/arduino-bitbloq-878x581.png)
+
+---
 
 ### [ArduBlock](http://blog.ardublock.com/)
 
@@ -20,11 +24,15 @@
 
 ![Ardublock](http://blog.ardublock.com/wp-content/uploads/2013/04/untitled.jpg)
 
+---
+
 ### [mBlock on line](https://ide.mblock.cc/?device#/)
 
 [Más información sobre mBlock](mblock.md)
 
 ![mBlock](http://www.mblock.cc/wp-content/uploads/2018/05/PANDA.png)
+
+---
 
 ### [Visualino](www.visualino.net)
 
