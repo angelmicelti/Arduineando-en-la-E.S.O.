@@ -2,9 +2,6 @@
 
 ## Recursos de interés
 
----
----
-
 ### [ArduinoBlocks](https://www.arduinoblocks.com)
 
 [Más información sobre Arduinoblocks](arduinoblocks.md) 
