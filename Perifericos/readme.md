@@ -2,6 +2,6 @@
 
 ## Periféricos de entrada
 
-- Teclado analógico.
+- [Teclados analógicos](TecladoAnalogico.md).
 
 ## Periféricos de salida
