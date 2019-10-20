@@ -3,7 +3,7 @@
 Los teclados son muy necesarios en nuestros proyectos, dado que, muy habitualmente, necesitamos que reaccionen a sencillas pulsaciones del usuario.  
 Un teclado digital precisa de tres cables para su funcionamiento, además de la colocación de una resistencia para poder realizar un pull-up o un pull-down.  
 He descubierto unos teclados analógicos que permiten obtener, con una sola placa y tres cables, un número bastante elevado de pulsadores.  
-He realizado la calibración de cada uno y un sencillo [programa de prueba](http://www.arduinoblocks.com/web/project/174238).  
+He realizado la [calibración de cada uno](CalibrandoPulsadores.md) y un sencillo programa de prueba.  
 Puedes echarles un vistazo a continuación
 
 ## _Teclado analógico de 4 botones KC11B04_
@@ -15,7 +15,7 @@ He encontrado el teclado en [este enlace](https://es.aliexpress.com/item/3305743
 
 He realizado este montaje:
 
-![MontajeKC11BC04](MontajeKC11BC04.jpg)
+![KC11BC04LED](KC11BC04LED.jpg)
 
 cuya programación puedes ver en Arduinoblocks, en [este enlace](http://www.arduinoblocks.com/web/project/174214).
 
@@ -25,14 +25,15 @@ cuya programación puedes ver en Arduinoblocks, en [este enlace](http://www.ardu
 
 ![KeyestudioADKey](KeyestudioADKey.jpg)
 
-Este teclado posee 5 botones, y son cinco las salidas que nos ofrece, dado que sólo se ofrece salida cuando se pulsa un único botón.
+Este teclado posee 5 botones, y son cinco las salidas que nos ofrece, dado que sólo se ofrece salida cuando se pulsa un único botón (curiosamente, **aunque hay más botones, tenemos menos salidas**).
 Podemos encontrar este teclado en [este enlace](https://www.keyestudio.com/keyestudio-ad-key-button-module-for-arduino-p0589.html).
-
 
 He realizado este montaje:
 
-![MontajeKeyestudio](MontajeKeyestudio.jpg)
+![KeyestudioLED](KeyestudioLED.jpg)
 
 cuya programación puedes ver en Arduinoblocks, en [este enlace](http://www.arduinoblocks.com/web/project/174563).
 
 ---
+
+## [Calibración de los pulsadores analógicos](CalibrandoPulsadores.md)

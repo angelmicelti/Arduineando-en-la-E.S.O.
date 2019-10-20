@@ -62,12 +62,12 @@ y los hemos guardado en un archivo, los llevo a [esta hoja de cálculo](https://
 
 Calculamos la media aritmética de los valores observados, así como la desviación típica de cada conjunto de datos. Una vez hecho esto, utilizamos el "criterio de las 3 sigmas" (el intervalo de confianza estará entre media-3 x sigma y media + 3 x sigma), y obtenemos los siguientes intervalos:
 
-   _  |   K1    |    K2   |  K3     | K4    |
-:---: |  :---:  |  :---:  | :---:   | :---: |
-K1    | 400-410 | 502-512 | 673-681 | >1020 |
-K2    |         | 602-612 | 758-768 | >1020 |
-K3    |         |         | 808-818 | >1020 |
-K4    |         |         |         | >1020 |
+|       |   K1    |    K2   |  K3     | K4    |
+| :---: |  :---:  |  :---:  | :---:   | :---: |
+| K1    | 400-410 | 502-512 | 673-681 | >1020 |
+| K2    |         | 602-612 | 758-768 | >1020 |
+| K3    |         |         | 808-818 | >1020 |
+| K4    |         |         |         | >1020 |
 
 En esta tabla de doble entrada indicamos la pulsación simultánea de dos pulsadores: por ejemplo K1 con K1 indica que sólo se pulsa la tecla K1.
 
@@ -155,7 +155,7 @@ void loop()
 
 El resultado puede verse en el siguiente vídeo:
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE "Video Title")
+[![Pulsadores analógicos KC11BC04](http://img.youtube.com/vi/wKUUPtoOMPc/0.jpg)](http://www.youtube.com/watch?v=wKUUPtoOMPc "Pulsadores analógicos KC11BC04")
 
 ---
 
@@ -166,7 +166,7 @@ El resultado puede verse en el siguiente vídeo:
 En este teclado, tenemos cinco botones sobre la placa, y ésta tiene también tres pines:
 - OUT, que irá conectado a la entrada analógica
 - Vcc, alimentación.
-- GND, masas
+- GND, masa.
 
 Vamos a proceder de una forma muy parecida al teclado anterior.  
 
@@ -176,8 +176,69 @@ Realizamos el siguiente montaje para la adquisición de datos a un archivo:
 
 Utilizamos [el mismo programa](http://www.arduinoblocks.com/web/project/174238) que con el teclado anterior para enviar los datos a la consola serie, y seguimos el mismo procedimiento para guardarlos en un archivo, poder analizarlos y subirlos a [esta hoja de cálculo](https://docs.google.com/spreadsheets/d/10xi-N_vE9RpEmJLrSJPZ8AfVkocjgYcwW_z636umT3Q/edit?usp=sharing) de Google Drive.
 
-En dicha hoja de cálculo procesamos los datos y obtenemos los intervalos de funcionamiento para nuestro teclado Keyestudio:  
+|            |   SW1   |   SW2   |   SW3   |   SW4   |   SW5   |
+|    :---:    |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
+|Valor de A0  |    0    | 144-146 | 330-332 | 505-507 | 741-744 |
 
-    _        |   SW1   |   SW2   |   SW3   |   SW4   |   SW5    |
-     :---:   |  :---:  |  :---:  | :---:   |  :---:  |  :---:   |
- Valor de A0 |    0    | 144-146 | 330-332 | 505-507 |  741-744 |
+Ya sólo nos queda escribir para nuestra placa Keyestudio un programa análogo al que hemos hecho para la placa KC11BC04. Lo encontramos en este enlace.
+Aquí debajo os dejamos también el código:
+
+~~~cpp
+double teclado;
+
+void setup()
+{
+  Serial.begin(9600);
+
+pinMode(A0, INPUT);
+pinMode(13, OUTPUT);
+pinMode(12, OUTPUT);
+pinMode(11, OUTPUT);
+  teclado = 0;
+}
+
+
+void loop()
+{
+    teclado = analogRead(A0);
+    Serial.println(teclado);
+    if ((teclado == 0)) {
+      digitalWrite(13, HIGH);
+
+    } else {
+      digitalWrite(13, LOW);
+      if (((teclado >= 144) && (teclado <= 146))) {
+        digitalWrite(12, HIGH);
+
+      } else {
+        digitalWrite(12, LOW);
+        if (((teclado >= 330) && (teclado <= 332))) {
+          digitalWrite(11, HIGH);
+
+        } else {
+          digitalWrite(11, LOW);
+          if (((teclado >= 505) && (teclado <= 507))) {
+            digitalWrite(11, HIGH);
+            digitalWrite(12, HIGH);
+
+          } else {
+            digitalWrite(11, LOW);
+            digitalWrite(12, LOW);
+            if (((teclado >= 741) && (teclado <= 744))) {
+              digitalWrite(12, HIGH);
+              digitalWrite(13, HIGH);
+
+            } else {
+              digitalWrite(12, LOW);
+              digitalWrite(13, LOW);
+            }
+          }
+        }
+      }
+    }
+    delay(50);
+}
+~~~
+
+Finalmente, podemos ver el vídeo de funcionamiento:
+[![Pulsadors analógicos Keyestudio AD Key](http://img.youtube.com/vi/wKUUPtoOMPc/0.jpg)](http://www.youtube.com/watch?v=wKUUPtoOMPc "Pulsadores analógicos Keyestudio AD Key")
