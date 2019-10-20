@@ -155,7 +155,7 @@ void loop()
 
 El resultado puede verse en el siguiente vídeo:
 
-[![Pulsadores analógicos KC11BC04](http://img.youtube.com/vi/wKUUPtoOMPc/0.jpg)](http://www.youtube.com/watch?v=wKUUPtoOMPc "Pulsadores analógicos KC11BC04")
+[![Pulsadores analógicos KC11BC04](http://img.youtube.com/vi/Ix5B5Eizx6A/0.jpg)](http://www.youtube.com/watch?v=Ix5B5Eizx6A "Pulsadores analógicos KC11BC04")
 
 ---
 
