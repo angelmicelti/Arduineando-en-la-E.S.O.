@@ -6,10 +6,7 @@ Repositorio "cajón de sastre" para el trabajo de Arduino en la E.S.O.
 
 - [Directamente en código Arduino](ConCodigo/readme.md)
 - [Periféricos para Arduino](Perifericos/readme.md)
-- [Programación gráfica](Grafico/readme.md)
-- [Proyectos](Proyectos/proyectos.md)
 - [Enreando con Arduino](Enreando/readme.md).
 
-## Recursos que vienen bien
 
-[Prácticas educativas con Arduino](https://programoergosum.gitbooks.io/practicas-educativas-con-arduino/content/), de ElCableAmarillo
+Más información en la [wiki](https://github.com/angelmicelti/Arduineando-en-la-E.S.O./wiki)
