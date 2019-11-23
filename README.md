@@ -7,4 +7,4 @@
 - [Periféricos para Arduino](Perifericos/readme.md)
 
 
-Más información en la [wiki](https://github.com/angelmicelti/Arduineando-en-la-E.S.O./wiki)
+### Más información en la [wiki](https://github.com/angelmicelti/Arduineando-en-la-E.S.O./wiki)
