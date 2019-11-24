@@ -4,7 +4,5 @@
 
 ![Arduino en la E.S.O.](https://i.blogs.es/71bd8f/650_1200/450_1000.jpg)
 
-- [Periféricos para Arduino](Perifericos/readme.md)
 
-
-### Más información en la [wiki](https://github.com/angelmicelti/Arduineando-en-la-E.S.O./wiki)
+### Visita la [wiki](https://github.com/angelmicelti/Arduineando-en-la-E.S.O./wiki)
