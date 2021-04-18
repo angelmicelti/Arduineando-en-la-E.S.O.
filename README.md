@@ -7,4 +7,4 @@ Repositorio "cajón de sastre" para mi trabajo con Arduino en la E.S.O.
 
 ![Arduino en la E.S.O.](https://i.blogs.es/71bd8f/650_1200/450_1000.jpg)
 
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Invítame a un café', '#29abe0', 'P5P44C9C3');kofiwidget2.draw();</script> 
+<a href='https://ko-fi.com/P5P44C9C3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=2' border='0' alt='Invítame a un café' /></a>
