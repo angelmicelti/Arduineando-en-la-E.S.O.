@@ -1,0 +1,13 @@
+Keuwlsoft Bluetooth Electronics Panel File
+2021-07-07 14:08:27
+2
+
+*.kwl
+set_grid_size(16,8)
+add_text_box(4,0,6,C,CONTROL DE COCHE,187,199,121,)
+add_button(6,2,2,U,)
+add_button(8,4,5,R,)
+add_button(6,6,3,D,)
+add_button(4,4,4,L,)
+add_button(6,4,6,S,)
+set_panel_notes(CONTROL DE COCHE CON BLUETOOTH,Cada botón hace moverse al coche en una dirección,El botón central detener la marcha,)
